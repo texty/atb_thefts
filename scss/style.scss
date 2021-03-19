@@ -1,0 +1,151 @@
+body {
+  background-color: #333;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+header {
+  display: flex;
+  background-image: url("../img/cover.jpg");
+  min-height: 60vh;
+
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 52px;
+  margin: 30px auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 100;
+  font-size:20px;
+  text-align: end;
+}
+
+p {
+  width: 50%;
+  margin: 30px auto;
+  line-height: 1.6;
+}
+
+
+.domain {
+  display: none;
+}
+
+
+.svg-wrapper {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin:auto;
+  @media(max-width:800px) {
+    display: block;
+  }
+  //height: 100vh;
+}
+
+#chart-1 {
+  margin: auto;
+  height: max-content;
+  width: calc(65% - 4em);
+  @media(max-width: 800px){
+    width: calc(90% - 2em);
+  }
+
+  svg {
+    border: 1px solid red;
+  }
+}
+
+.chart  {
+  //margin: 0 2em;
+}
+
+#cloud {
+  width: 35%;
+  @media(max-width: 800px){
+    width: calc(90% - 2em);
+    margin:auto;
+  }
+}
+
+
+svg {
+  border: 1px solid red;
+
+  padding: 5px;
+  display: block;
+  width: 100%;
+  //height: auto;
+}
+
+path.heat-map {
+  cursor:pointer;
+}
+
+svg text {
+  //font-weight: 100;
+  letter-spacing: 1px;
+  fill: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  @media(max-width:800px){
+    font-size: 18px;
+  }
+}
+
+
+.tick line {
+  stroke: white;
+}
+
+.tick text {
+  font-size: 15px;
+  @media(max-width:800px){
+    font-size: 15px;
+  }
+
+}
+
+.chart-label {
+  font-size: 15px;
+  text-anchor: end;
+  @media(max-width:800px){
+    font-size: 18px;
+  }
+}
+
+
+#sum_amount {
+  width: 80%;
+  margin: auto;
+  max-width: 1200px;
+
+  svg {
+
+    text.cat {
+      font-weight: 600;
+      stroke: #374890;
+      stroke-width: 0.5px;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+  }
+}
+
+select#select {
+  min-width: 200px;
+  margin: auto;
+}
+
+#bar-chart {
+  width: 90%;
+  margin: auto;
+  max-width: 600px;
+}

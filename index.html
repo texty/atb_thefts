@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/prettydropdowns.css">
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="lib/jquery.prettydropdowns.js"></script>
+
+<style>
+
+
+
+</style>
+
+<body>
+<!--<header></header>-->
+    <img style="width: 100%;" src="img/cover.jpg"/>
+
+    <h1>Алкоголь, солодощі, червона ікра. <br>
+        Що українці крадуть в АТБ</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Congue eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Et tortor at risus viverra adipiscing at in tellus. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices eros in cursus turpis massa tincidunt dui ut. Id neque aliquam vestibulum morbi blandit cursus risus at.</p>
+
+
+
+    <div class="svg-wrapper">
+        <div id="chart-1"  class="chart">
+            <h2 style="text-align: start">Анатомія крадіжок</h2>
+        </div>
+        <div id="cloud">
+            <h2>крадіжок: </h2>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Congue eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Et tortor at risus viverra adipiscing at in tellus. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices eros in cursus turpis massa tincidunt dui ut. Id neque aliquam vestibulum morbi blandit cursus risus at.</p>
+
+    <p>Tristique senectus et netus et malesuada fames ac turpis egestas. Egestas purus viverra accumsan in. Adipiscing elit pellentesque habitant morbi tristique senectus et. Pulvinar mattis nunc sed blandit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Purus ut faucibus pulvinar elementum integer. Risus viverra adipiscing at in tellus integer feugiat scelerisque. Et malesuada fames ac turpis egestas sed tempus. Volutpat blandit aliquam etiam erat velit. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Eget sit amet tellus cras adipiscing. Dolor magna eget est lorem ipsum. Risus at ultrices mi tempus imperdiet nulla.</p>
+
+    <p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
+
+    <button>Подивитись рендомну крадіжку</button>
+
+    <div id="sum_amount">
+        <h2 style="text-align: start">По кількості найбільше винесли солодкого, по вартості - алкоголю</h2>
+    </div>
+
+    <p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
+
+    <p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
+
+
+
+    <h3 style="text-align: center">Пиво з ковбасою та горілкою, віскі - з віскі та лікером </h3>
+    <h3 style="text-align: center"> Що крадуть разом з <select id="select" class="pretty" onchange=""></select></h3>
+
+    <div id="bar-chart"></div>
+
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-contour.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="lib/lodash.js"></script>
+
+
+    <script src="js/heat_map.js"></script>
+    <script src="js/related_prod.js"></script>
+    <script src="js/sum_amount.js"></script>
+
+
+
+</body>
