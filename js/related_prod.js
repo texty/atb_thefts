@@ -11,22 +11,48 @@ d3.csv("data/related_prod.csv").then(function(data) {
 
     data = data.sort(function(a, b){ return d3.descending(a.sort - b.sort) });
     
-    var options = [...new Set(data.map(function(d){ return  d.target }))]
+    var choices = [...new Set(data.map(function(d){ return  d.target }))]
 
-    // options = options.sort(function(a, b){ return d3.ascending(a,b) });
+    // var selectChoices = [];
+    //
+    // for(var i in options) {
+    //     selectChoices.push({ value: options[i], label: options[i]})
+    //
+    // }
+    //
+    // console.log(selectChoices);
+    //
+    // // options = options.sort(function(a, b){ return d3.ascending(a,b) });
+    //
+    // var genericExamples = new Choices('#select', {
+    //     searchEnabled: false,
+    //     removeItemButton: true,
+    //     choices: selectChoices
+    // }).setChoices(
+    //     [
+    //         { value: 'віскі', label: 'віскі', selected: true },
+    //     ],
+    //     'value',
+    //     'label',
+    //     false
+    // );
 
     d3.select("#select")
         .selectAll("option")
-        .data(options)
+        .data(choices)
         .enter()
         .append("option")
         .attr("value", function(d){ return d })
         .text(function(d){ return d });
 
+    // d3.select("")
 
+    var options = {searchable: true, placeholder: "віскі" };
 
-    $dropdown =  $('select#select').prettyDropdown();
-    $dropdown.refresh();
+    NiceSelect.bind(document.getElementById("select"), options);
+
+    // $dropdown =  $('select#select').prettyDropdown();
+    // $dropdown.refresh();
 
 
 
@@ -34,7 +60,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
     const detail_xScale = d3.scaleLinear();
     const detail_yScale = d3.scaleBand();
 
-    const barChart = d3.select("#bar-chart")
+    const barChart = d3.select("#related-prod")
         .append("svg")
         .append("g")
         .attr("transform", "translate(50,30)");
@@ -42,8 +68,8 @@ d3.csv("data/related_prod.csv").then(function(data) {
 
     drawBarChart("віскі");
 
-    $("#select").on("change", function(d){
-        let selected = $("#select option:selected").text();
+    d3.select("#select").on("change", function(d){
+        let selected = d3.selectAll("#select").node().value;
         drawBarChart(selected);
     });
 
@@ -59,13 +85,12 @@ d3.csv("data/related_prod.csv").then(function(data) {
             });
 
 
-        var new_width = d3.select("#bar-chart").node().getBoundingClientRect().width - detail_margin.left - detail_margin.right;
+        var new_width = d3.select("#related-prod").node().getBoundingClientRect().width - detail_margin.left - detail_margin.right;
 
-        console.log(filtered);
 
-        d3.select("#bar-chart").select("svg")
+        d3.select("#related-prod").select("svg")
             .attr("width", new_width )
-            .attr("height", 50 * filtered.length + 30);
+            .attr("height", 40 * filtered.length + 30);
 
         //Update the scales
         detail_xScale
@@ -73,7 +98,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
             .domain([0, d3.max(filtered, function (d) { return d.freq;  })]);
 
         detail_yScale
-            .range([0, 50 * filtered.length])
+            .range([0, 40 * filtered.length])
             .domain(filtered.map(function (d) { return d.detail; }));
 
 
@@ -86,7 +111,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
             .attr("class", "detail")
             .merge(bars)
             .attr("y", function (d, i) { return detail_yScale(d.detail) +  detail_yScale.bandwidth()/2; })
-            .attr("height", detail_yScale.bandwidth() / 4 )
+            .attr("height", detail_yScale.bandwidth() / 8 )
             .transition().duration(500)
             .attr("x", 0)
             .attr("width", function (d) { return detail_xScale(d.freq);  })

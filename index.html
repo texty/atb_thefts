@@ -6,11 +6,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" href="css/prettydropdowns.css">
+<!--<link rel="stylesheet" href="css/prettydropdowns.css">-->
+<link rel="stylesheet" href="css/nice-select2.css">
 
-<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
 
-<script src="lib/jquery.prettydropdowns.js"></script>
+<!--<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>-->
+<script src="lib/nice-select2.js"></script>
+
+<!--<script src="lib/jquery.prettydropdowns.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>-->
+
 
 <style>
 
@@ -22,8 +27,8 @@
 <!--<header></header>-->
     <img style="width: 100%;" src="img/cover.jpg"/>
 
-    <h1>Алкоголь, солодощі, червона ікра. <br>
-        Що українці крадуть в АТБ</h1>
+    <h1>Віскі, шоколад, червона ікра.<br>
+        Що найчастіше крадуть в АТБ</h1>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Congue eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Et tortor at risus viverra adipiscing at in tellus. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices eros in cursus turpis massa tincidunt dui ut. Id neque aliquam vestibulum morbi blandit cursus risus at.</p>
 
@@ -54,12 +59,28 @@
 
     <p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
 
+    <p>Ми відібрали 50 найпопулярніших товарів, що фігурують у крадіжках і подивились, що найчастіше крадуть разом з ними</p>
+
+    <h3 class="subtitle">Пиво - ковбаса, жувальна гумка - шкарпетки </h3>
+
+<hr>
+    <h3 style="text-align: center"> Що крадуть разом з <select id="select" ></select></h3>
+
+    <div id="related-prod"></div>
+<hr>
+
+<p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
+
+    <h3 class="subtitle">Портрет крадія</h3>
+
+<hr>
+    <div id="portrait"></div>
+<hr>
 
 
-    <h3 style="text-align: center">Пиво з ковбасою та горілкою, віскі - з віскі та лікером </h3>
-    <h3 style="text-align: center"> Що крадуть разом з <select id="select" class="pretty" onchange=""></select></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Congue eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Et tortor at risus viverra adipiscing at in tellus. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices eros in cursus turpis massa tincidunt dui ut. Id neque aliquam vestibulum morbi blandit cursus risus at.</p>
 
-    <div id="bar-chart"></div>
+<p>Tristique senectus et netus et malesuada fames ac turpis egestas. Egestas purus viverra accumsan in. Adipiscing elit pellentesque habitant morbi tristique senectus et. Pulvinar mattis nunc sed blandit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Purus ut faucibus pulvinar elementum integer. Risus viverra adipiscing at in tellus integer feugiat scelerisque. Et malesuada fames ac turpis egestas sed tempus. Volutpat blandit aliquam etiam erat velit. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Eget sit amet tellus cras adipiscing. Dolor magna eget est lorem ipsum. Risus at ultrices mi tempus imperdiet nulla.</p>
 
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -72,6 +93,7 @@
     <script src="js/heat_map.js"></script>
     <script src="js/related_prod.js"></script>
     <script src="js/sum_amount.js"></script>
+    <script src="js/portrait.js"></script>
 
 
 

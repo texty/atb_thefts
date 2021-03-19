@@ -2,6 +2,7 @@
   position: relative;
   min-width: 72px; /* 70px + borders */
   display: inline-block;
+  margin: auto;
 }
 .prettydropdown.loading {
   min-width: 0;
@@ -11,9 +12,11 @@
   top: 0;
   left: 0;
   background: #fff;
+  /*background: #333;*/
   border: 1px solid #a9a9a9;
   box-sizing: content-box;
   color: #000;
+  /*color: #00ff00;*/
   cursor: pointer;
   font: normal 18px Calibri, sans-serif;
   list-style-type: none;
@@ -51,12 +54,12 @@
 .prettydropdown > ul > li {
   position: relative;
   min-width: 70px;
-  height: 48px; /* 50px - borders */
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  box-sizing: border-box;
+  /*height: 30px; !* 50px - borders *!*/
+  /*border-top: 1px solid transparent;*/
+ /*border-bottom: 1px solid transparent;*/
+  /*box-sizing: border-box;*/
   display: none;
-  line-height: 46px; /* 48px - borders */
+  /*line-height: 28px; !* 48px - borders *!*/
   margin: 0;
   padding-left: 0.8rem;
 }
@@ -98,16 +101,16 @@
   margin: auto;
 }
 .prettydropdown.arrow.small > ul > li.selected:before, .prettydropdown.arrow.small > ul > li.selected:after {
-  top: 4px;
+  /*top: 4px;*/
   height: 8px;
   border-width: 4px;
 }
 .prettydropdown.arrow > ul > li.selected:before {
-  border-top-color: #a9a9a9; /* Arrow color */
+  border-top-color: #333; /* Arrow color */
 }
 .prettydropdown.arrow > ul > li.selected:after {
-  top: 4px; /* Chevron thickness */
-  border-top-color: #fff; /* Match background colour */
+  /*top: 4px; !* Chevron thickness *!*/
+  border-top-color: #333; /* Match background colour */
 }
 .prettydropdown.arrow.small > ul > li.selected:after {
   top: 2px; /* Chevron thickness */

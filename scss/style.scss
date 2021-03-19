@@ -12,11 +12,12 @@ header {
 }
 
 h1 {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 52px;
+  //font-family: 'PT Sans', sans-serif;
+  //font-size: 52px;
   margin: 30px auto;
   text-align: center;
-  font-weight: 400;
+  //font-weight: 400;
+  font: normal 52px Calibri, sans-serif;
 }
 
 h2 {
@@ -25,10 +26,16 @@ h2 {
   text-align: end;
 }
 
+
 p {
   width: 50%;
   margin: 30px auto;
   line-height: 1.6;
+}
+
+h3.subtitle {
+  text-align: center;
+  margin-top: 80px;
 }
 
 
@@ -57,18 +64,16 @@ p {
   @media(max-width: 800px){
     width: calc(90% - 2em);
   }
+}
 
+#chart-1, #sum_amount {
   svg {
     border: 1px solid red;
   }
 }
 
-.chart  {
-  //margin: 0 2em;
-}
-
 #cloud {
-  width: 35%;
+  width: 32%;
   @media(max-width: 800px){
     width: calc(90% - 2em);
     margin:auto;
@@ -77,11 +82,8 @@ p {
 
 
 svg {
-  border: 1px solid red;
-
-  padding: 5px;
-  display: block;
-  width: 100%;
+  //display: block;
+  //width: 100%;
   //height: auto;
 }
 
@@ -140,12 +142,39 @@ svg text {
 }
 
 select#select {
-  min-width: 200px;
-  margin: auto;
+ display: none;
 }
 
-#bar-chart {
+#related-prod{
   width: 90%;
   margin: auto;
-  max-width: 600px;
+  max-width: 500px;
+}
+
+#portrait {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width:1400px;
+
+  div {
+    margin-right: 30px;
+  }
+
+}
+
+//.prettydropdown > ul {
+//  font-weight: 200;
+//  //color: #00ff00 !important;
+//  font-size:1em;
+//  //background: #333 !important;
+//  //border: 0!important;
+//}
+
+.nice-select {
+  color: #333;
+  width: max-content;
+  padding-right:45px !important;
+
 }

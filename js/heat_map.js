@@ -224,7 +224,7 @@ function drawWordCloud(df){
 
 
     _height = d3.select("#chart-1>svg").node().getBoundingClientRect().height - _margin.top;
-    _width = d3.select("#cloud").node().getBoundingClientRect().width;
+    _width = d3.select("#cloud").node().getBoundingClientRect().width - _margin.left;
 
     d3.select("#cloud > svg")
         .attr("height", _height)

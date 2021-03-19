@@ -9,11 +9,9 @@ header {
   min-height: 60vh; }
 
 h1 {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 52px;
   margin: 30px auto;
   text-align: center;
-  font-weight: 400; }
+  font: normal 52px Calibri, sans-serif; }
 
 h2 {
   font-weight: 100;
@@ -24,6 +22,10 @@ p {
   width: 50%;
   margin: 30px auto;
   line-height: 1.6; }
+
+h3.subtitle {
+  text-align: center;
+  margin-top: 80px; }
 
 .domain {
   display: none; }
@@ -46,21 +48,16 @@ p {
   @media (max-width: 800px) {
     #chart-1 {
       width: calc(90% - 2em); } }
-  #chart-1 svg {
-    border: 1px solid red; }
+
+#chart-1 svg, #sum_amount svg {
+  border: 1px solid red; }
 
 #cloud {
-  width: 35%; }
+  width: 32%; }
   @media (max-width: 800px) {
     #cloud {
       width: calc(90% - 2em);
       margin: auto; } }
-
-svg {
-  border: 1px solid red;
-  padding: 5px;
-  display: block;
-  width: 100%; }
 
 path.heat-map {
   cursor: pointer; }
@@ -102,12 +99,25 @@ svg text {
     stroke-linejoin: miter; }
 
 select#select {
-  min-width: 200px;
-  margin: auto; }
+  display: none; }
 
-#bar-chart {
+#related-prod {
   width: 90%;
   margin: auto;
-  max-width: 600px; }
+  max-width: 500px; }
+
+#portrait {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px; }
+  #portrait div {
+    margin-right: 30px; }
+
+.nice-select {
+  color: #333;
+  width: max-content;
+  padding-right: 45px !important; }
 
 /*# sourceMappingURL=style.css.map */
