@@ -111,9 +111,21 @@ d3.csv("data/alko_types.csv").then(function(data) {
 
     bars.enter().append("rect")
         .attr("height", y.bandwidth())
-        .attr("class", "tip")
+        .attr("class", function(d) {
+            let label = d3.select(this.parentNode).attr("data");
+            if(+d.data[label] < 10) {
+                return "tip";
+            } else {
+                return null;
+            }
+        })
         .attr("data-tippy-content", function(d) {
-            return d3.select(this.parentNode).attr("data");
+            let label = d3.select(this.parentNode).attr("data");
+            if(+d.data[label] < 10) {
+                return label;
+            } else {
+                return null;
+            }
         })
         .merge(bars)
         .transition().duration(500)
@@ -143,7 +155,7 @@ d3.csv("data/alko_types.csv").then(function(data) {
         delay: 50,
         arrow: true,
         inertia: true,
-        size: 'small',
+        size: 'big',
         duration: 500,
         allowHTML: true,
         trigger: "mouseenter",
