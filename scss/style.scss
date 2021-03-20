@@ -1,3 +1,5 @@
+$green: #00ff00;
+
 body {
   background-color: #333;
   font-family: 'Roboto Mono', monospace;
@@ -28,6 +30,7 @@ h2 {
 
 
 p {
+  font-size: 18px;
   width: 50%;
   margin: 30px auto;
   line-height: 1.6;
@@ -78,14 +81,14 @@ h3.subtitle {
     width: calc(90% - 2em);
     margin:auto;
   }
+
+  svg {
+   font-weight: 200;
+  }
+
 }
 
 
-svg {
-  //display: block;
-  //width: 100%;
-  //height: auto;
-}
 
 path.heat-map {
   cursor:pointer;
@@ -131,14 +134,16 @@ svg text {
 
   svg {
 
-    text.cat {
-      font-weight: 600;
-      stroke: #374890;
-      stroke-width: 0.5px;
-      stroke-linecap: butt;
-      stroke-linejoin: miter;
-    }
+
   }
+}
+
+text.cat {
+  font-weight: 600;
+  stroke: #374890;
+  stroke-width: 0.5px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
 }
 
 select#select {
@@ -177,4 +182,14 @@ select#select {
   width: max-content;
   padding-right:45px !important;
 
+}
+
+#alko_types {
+  width: 100%;
+  //max-width: 500px;
+  //margin: auto;
+}
+
+.green {
+  color: $green;
 }

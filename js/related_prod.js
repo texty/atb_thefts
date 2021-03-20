@@ -47,7 +47,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
 
     // d3.select("")
 
-    var options = {searchable: true, placeholder: "віскі" };
+    var options = { placeholder: "віскі" };
 
     NiceSelect.bind(document.getElementById("select"), options);
 

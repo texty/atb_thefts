@@ -30,8 +30,37 @@
     <h1>Віскі, шоколад, червона ікра.<br>
         Що найчастіше крадуть в АТБ</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Congue eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Et tortor at risus viverra adipiscing at in tellus. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices eros in cursus turpis massa tincidunt dui ut. Id neque aliquam vestibulum morbi blandit cursus risus at.</p>
+    <p>Протягом 2020 року українські суди розглянули близько 2 000 судових справ, в яких фігурують крадіжки з АТБ. Українці обкрадають супермаркети АТБ частіше за інші. Ми вирішили проаналізувати ці рішення і дізнатись, хто і заради яких товарів ризикує свободою.
+    </p>
 
+    <h3 class="subtitle">Крадуть те, чого не можуть собі дозволити</h3>
+
+    <p>В топі викрадених товарів немає продуктів, які "кожен день на столі". Найчастіше виносять дорогий алкоголь, велики плитки шоколаду, розчинну каву, червону ікру, дорогу ковбасу.</p>
+
+
+    <div id="sum_amount">
+        <h3 class="subtitle">По кількості найбільше винесли солодкого, по вартості - алкоголю</h3>
+        <!--<p>Графік має логаріфмічні шкали</p>-->
+        <img style="max-width: 100%;" src="img/sum_amount.png"/>
+    </div>
+
+    <!--<p>Цікавий факт: овочі та фрукти в крадіжках зустрічаються так само рідко, як і в кошиках звичайних покупців.</p>-->
+
+    <p>Як видно з графіка, найбільше вркали алкоголю і солодощів. В судових рішеннях за 2020 рік, які ми проаналізували, йшлося про близько 600 літрів алкоголю, які винесли або намагались винести з АТБ, загальною вартістю понад 200 тис. грн. І це, здебільшого, не горілка.</p>
+
+    <h3 class="subtitle green" >Який алкоголь смакує крадіям, %</h3>
+<p style="text-align: center">Наведіть мишею на маленькі сектори, щоб побачити назву</p>
+
+
+
+    <svg id="alko_types" width="100%" height="300"></svg>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Congue eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Et tortor at risus viverra adipiscing at in tellus. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices eros in cursus turpis massa tincidunt dui ut. Id neque aliquam vestibulum morbi blandit cursus risus at.</p>
+
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis. Congue eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Et tortor at risus viverra adipiscing at in tellus. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices eros in cursus turpis massa tincidunt dui ut. Id neque aliquam vestibulum morbi blandit cursus risus at.</p>
 
 
     <div class="svg-wrapper">
@@ -49,11 +78,8 @@
 
     <p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
 
-    <button>Подивитись рендомну крадіжку</button>
+    <!--<button>Подивитись рендомну крадіжку</button>-->
 
-    <div id="sum_amount">
-        <h2 style="text-align: start">По кількості найбільше винесли солодкого, по вартості - алкоголю</h2>
-    </div>
 
     <p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
 
@@ -64,10 +90,13 @@
     <h3 class="subtitle">Пиво - ковбаса, жувальна гумка - шкарпетки </h3>
 
 <hr>
-    <h3 style="text-align: center"> Що крадуть разом з <select id="select" ></select></h3>
+    <h3 style="text-align: center; color: #00ff00"> Що крадуть разом з <select id="select" ></select></h3>
 
     <div id="related-prod"></div>
 <hr>
+
+<p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
+
 
 <p>Fermentum iaculis eu non diam phasellus. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac auctor augue mauris. Pharetra sit amet aliquam id. Et pharetra pharetra massa massa ultricies mi quis. Risus in hendrerit gravida rutrum quisque non. Malesuada fames ac turpis egestas maecenas. Dictum non consectetur a erat nam at lectus. Faucibus turpis in eu mi bibendum. Rhoncus urna neque viverra justo nec ultrices.</p>
 
@@ -83,16 +112,19 @@
 <p>Tristique senectus et netus et malesuada fames ac turpis egestas. Egestas purus viverra accumsan in. Adipiscing elit pellentesque habitant morbi tristique senectus et. Pulvinar mattis nunc sed blandit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Purus ut faucibus pulvinar elementum integer. Risus viverra adipiscing at in tellus integer feugiat scelerisque. Et malesuada fames ac turpis egestas sed tempus. Volutpat blandit aliquam etiam erat velit. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Eget sit amet tellus cras adipiscing. Dolor magna eget est lorem ipsum. Risus at ultrices mi tempus imperdiet nulla.</p>
 
 
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/d3-contour.v1.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
     <script src="lib/lodash.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
 
 
     <script src="js/heat_map.js"></script>
     <script src="js/related_prod.js"></script>
-    <script src="js/sum_amount.js"></script>
+    <!--<script src="js/sum_amount.js"></script>-->
     <script src="js/portrait.js"></script>
 
 

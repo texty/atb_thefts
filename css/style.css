@@ -19,6 +19,7 @@ h2 {
   text-align: end; }
 
 p {
+  font-size: 18px;
   width: 50%;
   margin: 30px auto;
   line-height: 1.6; }
@@ -58,6 +59,8 @@ h3.subtitle {
     #cloud {
       width: calc(90% - 2em);
       margin: auto; } }
+  #cloud svg {
+    font-weight: 200; }
 
 path.heat-map {
   cursor: pointer; }
@@ -91,12 +94,13 @@ svg text {
   width: 80%;
   margin: auto;
   max-width: 1200px; }
-  #sum_amount svg text.cat {
-    font-weight: 600;
-    stroke: #374890;
-    stroke-width: 0.5px;
-    stroke-linecap: butt;
-    stroke-linejoin: miter; }
+
+text.cat {
+  font-weight: 600;
+  stroke: #374890;
+  stroke-width: 0.5px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter; }
 
 select#select {
   display: none; }
@@ -119,5 +123,11 @@ select#select {
   color: #333;
   width: max-content;
   padding-right: 45px !important; }
+
+#alko_types {
+  width: 100%; }
+
+.green {
+  color: #00ff00; }
 
 /*# sourceMappingURL=style.css.map */

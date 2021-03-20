@@ -1,6 +1,8 @@
 /**
  * Created by yevheniia on 18.03.21.
  */
+const green = "#00ff00";
+
 var margin = {top: 20, right: 30, bottom: 100, left: 60},
     width = 960,
     height = 600;
@@ -58,8 +60,9 @@ y_axis
 
 
 var _margin = {top: 10, right: 10, bottom: 10, left: 20},
-    _width = 300 - _margin.left - _margin.right,
-//            _height = 600 - _margin.top - _margin.bottom;
+    // _width = 300 - _margin.left - _margin.right,
+
+    _width = d3.select("#cloud").node().getBoundingClientRect().width - _margin.left - _margin.right,
 
     _height = d3.select("#chart-1>svg").node().getBoundingClientRect().height - _margin.top;
 
@@ -159,7 +162,7 @@ Promise.all([
         .append("polygon")
         .attr("class", "poly")
         .attr("points",function(d) { return d.map(function(d) { return [x(d.x),y(d.y)].join(",");}).join(" "); })
-        .attr("stroke", "#00ff00")
+        .attr("stroke", green)
         .attr("fill", "none");
 
     svg.append("text")
@@ -182,7 +185,7 @@ Promise.all([
         .append("polygon")
         .attr("class", "poly2")
         .attr("points",function(d) { return d.map(function(d) { return [x(d.x),y(d.y)].join(",");}).join(" "); })
-        .attr("stroke", "#00ff00")
+        .attr("stroke", green)
         .attr("fill", "none");
 
     svg.append("text")
@@ -206,7 +209,7 @@ Promise.all([
         .append("polygon")
         .attr("class", "poly3")
         .attr("points",function(d) { return d.map(function(d) { return [x(d.x),y(d.y)].join(",");}).join(" "); })
-        .attr("stroke", "#00ff00")
+        .attr("stroke", green)
         .attr("fill", "none");
 
     svg.append("text")
@@ -254,7 +257,7 @@ function drawWordCloud(df){
             .data(words)
             .enter().append("text")
             .style("font-size", function(d) { return d.size; })
-            .style("fill", "#00ff00") //#eae326
+            .style("fill", green) //#eae326
             //                                .style("fill", function(d) {return _color(Math.sqrt(d.size))})
             .attr("text-anchor", "middle")
             .style("font-family", "Roboto Mono, mono")
