@@ -132,6 +132,9 @@ Promise.all([
                 return k.x === xInvert && k.y === yInvert
             });
 
+            d3.select("#cloud > h2").text(xInvert + "/"+ yInvert +" | крадіжок: "+ filtered[0].thefts_amount );
+            drawWordCloud(filtered)
+
 
             // var products = d3.nest()
             //     .key(function(d) { return d["товар"]; })
@@ -146,8 +149,7 @@ Promise.all([
             //     .entries(filtered)
             //     .length;
 
-            d3.select("#cloud > h2").text(xInvert + "/"+ yInvert +" | крадіжок: "+ filtered[0].thefts_amount );
-            drawWordCloud(filtered)
+
         });
 
 
@@ -216,10 +218,20 @@ Promise.all([
         .attr("x", x(76))
         .attr("y", y(28.4))
         .attr("class", "chart-label")
-        .text("великі пограбування")
+        .text("великі пограбування");
+
+    let defaultCloud = input[1].filter(function(k){
+        return k.x === 1 && k.y === 1
+    });
+
+    d3.select("#cloud > h2").text(1 + "/"+ 1 +" | крадіжок: "+ defaultCloud[0].thefts_amount );
+    drawWordCloud(defaultCloud)
 
 
 });
+
+
+
 
 
 function drawWordCloud(df){
