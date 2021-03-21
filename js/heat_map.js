@@ -244,7 +244,9 @@ function drawWordCloud(df){
         .words(df.map(function(d) { return {text: d["товар"], size:d.freq}; }))
         .padding(15)        //space between words
         .rotate(function() { return ~~(Math.random() * 2) * 90; })
-        .fontSize(function(d) {  return font_size(d.size)  })
+        .fontSize(function(d) {
+            return font_size(d.size)
+        })
         .on("end", draw);
 
     layout.start();
@@ -256,7 +258,7 @@ function drawWordCloud(df){
             .selectAll("text")
             .data(words)
             .enter().append("text")
-            .style("font-size", function(d) { return d.size; })
+            .style("font-size", function(d) { return d.size + "px"; })
             .style("fill", green) //#eae326
             //                                .style("fill", function(d) {return _color(Math.sqrt(d.size))})
             .attr("text-anchor", "middle")
