@@ -86,7 +86,7 @@ d3.csv("data/alko_types.csv").then(function(data) {
         .attr("height", y.bandwidth())
         .attr("class", function(d) {
             let label = d3.select(this.parentNode).attr("data");
-            if(+d.data[label] < 10) {
+            if(+d.data[label] <= 10) {
                 return "tip";
             } else {
                 return null;
@@ -94,7 +94,7 @@ d3.csv("data/alko_types.csv").then(function(data) {
         })
         .attr("data-tippy-content", function(d) {
             let label = d3.select(this.parentNode).attr("data");
-            if(+d.data[label] < 10) {
+            if(+d.data[label] <= 10) {
                 return label;
             } else {
                 return null;
@@ -111,7 +111,7 @@ d3.csv("data/alko_types.csv").then(function(data) {
     d3.selectAll("g.layer").each(function(d){
         let label = d3.select(this).attr("data");
 
-        if(+d[0].data[label] > 10){
+        if(+d[0].data[label] > 5){
             d3.select(this)
                 .append("text")
                 // .attr("class", "cat")
