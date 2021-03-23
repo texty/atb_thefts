@@ -19,7 +19,7 @@ d3.csv("data/portrait.csv").then(function(data) {
        .text(function(d){
              return d.key + ", %"
          })
-        .style("color", "#00ff00");
+        .style("color", green);
 
 
     charts.append("svg")
@@ -77,7 +77,7 @@ var letdraw = function () {
                 .transition().duration(500)
                 .attr("x", xScale(0))
                 .attr("width", function (d) { return xScale(d.percent);  })
-                .attr("fill", "white");
+                .attr("fill", svgTextColor);
 
             div.selectAll("rect.grey")
                 .data(df)
@@ -89,7 +89,7 @@ var letdraw = function () {
                 .transition().duration(500)
                 .attr("x", xScale(0))
                 .attr("width", xScale(100) )
-                .attr("fill", "white")
+                .attr("fill", svgTextColor)
                 .style("opacity", 0.1);
 
 

@@ -85,7 +85,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
             });
 
 
-        var new_width = d3.select("#related-prod").node().getBoundingClientRect().width - detail_margin.left - detail_margin.right;
+        var new_width = d3.select("#related-wrapper").node().getBoundingClientRect().width - detail_margin.left - detail_margin.right;
 
 
         d3.select("#related-prod").select("svg")
@@ -115,7 +115,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
             .transition().duration(500)
             .attr("x", 0)
             .attr("width", function (d) { return detail_xScale(d.freq);  })
-            .attr("fill", "white");
+            .attr("fill", svgTextColor);
 
         bars.exit().remove();
 
@@ -133,7 +133,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
             .transition().duration(0)
             .attr("x", function(d) { return  detail_xScale(0); })
             .attr("y", function(d) { return detail_yScale(d.detail)  +  detail_yScale.bandwidth()/3 })
-            .attr("fill", "white")
+            .attr("fill", svgTextColor)
             .text(function(d){ return d.detail })
 
         ;
@@ -154,7 +154,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
             .attr("x", function(d) { return  -30; })
             .attr("y", function(d) { return detail_yScale(d.detail)  +  detail_yScale.bandwidth()/2 })
             .text(function(d){ return d.freq })
-            .attr("fill", "white");
+            .attr("fill", svgTextColor);
 
         dep_number.exit().remove();
     }

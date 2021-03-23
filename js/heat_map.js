@@ -2,10 +2,30 @@
  * Created by yevheniia on 18.03.21.
  */
 const green = "#00ff00";
+const svgTextColor = "#F0F0F0";
+
+function nFormatter(num, digits) {
+    var si = [
+        { value: 1, symbol: "" },
+        { value: 1E3, symbol: "т. " },
+        { value: 1E6, symbol: "млн " }
+
+    ];
+    var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+    var i;
+    for (i = si.length - 1; i > 0; i--) {
+        if (num >= si[i].value) {
+            break;
+        }
+    }
+    return (num / si[i].value).toFixed(0).replace(rx, "$1") + si[i].symbol;
+}
+
+
 
 var margin = {top: 20, right: 30, bottom: 100, left: 60},
     width = 960,
-    height = 600;
+    height = 650;
 
 var svg =  d3
     .select("#chart-1")
@@ -18,7 +38,7 @@ var svg =  d3
 
 
 var x = d3.scaleLog()
-    .domain([1, 100])
+    .domain([1, 210])
     .rangeRound([margin.left, width - margin.right]);
 
 var y = d3.scaleLog()
@@ -29,15 +49,17 @@ var color = d3.scaleSequential(d3.interpolatePlasma)
     .domain([0, 0.04]); // Points per square pixel.
 
 let x_axis = svg.append("g")
-    .attr("transform", "translate(0," + (height-margin.bottom/2) + ")")
+    .attr("transform", "translate(0," + (height-margin.bottom/1.2) + ")")
     .call(d3.axisBottom(x)
-        .tickFormat(function(d){ return d }));
+        .tickFormat(function(d){  return  d  })
+        .tickValues([1,2,3,4,5,10,20,50,100,200]));
 
 
 x_axis
     .append("text")
-    .attr("transform", "translate(" + (width/2) + " ," +  (margin.bottom/2 -10) + ")")
-    .text("Кількість товарів у крадіжці");
+    .attr("transform", "translate(" + (width - 10) + " ," +  (margin.bottom/1.5) + ")")
+    .style("text-anchor","end")
+    .text("кількість товарів у крадіжці");
 
 
 
@@ -49,14 +71,15 @@ let y_axis = svg.append("g")
         .ticks(5)
         .tickFormat(function(d){ return d })
     );
+
 y_axis
     .append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 0 - margin.left)
-    .attr("x",0 - (height / 2))
+    .attr("x",0 - 10)
     .attr("dy", "1em")
-    .style("text-anchor","middle")
-    .text("Різноманітність товарів у крадіжці");
+    .style("text-anchor","end")
+    .text("різноманітність товарів");
 
 
 var _margin = {top: 10, right: 10, bottom: 10, left: 20},
@@ -111,7 +134,7 @@ Promise.all([
             .y(function(d) { return y(d.y); })
             .size([width, height])
             .bandwidth(10)
-            .thresholds(500)
+            .thresholds(800)
             .cellSize(10)
             // .bandwidth(15)
             (input[0]))
@@ -165,13 +188,15 @@ Promise.all([
         .attr("class", "poly")
         .attr("points",function(d) { return d.map(function(d) { return [x(d.x),y(d.y)].join(",");}).join(" "); })
         .attr("stroke", green)
-        .attr("fill", "none");
+        .attr("fill", "none")
+        .style("pointer-events", "none");
 
     svg.append("text")
         .attr("x", x(72))
         .attr("y", y(2.6))
         .attr("class", "chart-label")
-        .text("виносили конкретні товари");
+        .text("виносили конкретні товари")
+        .style("pointer-events", "none");
 
 
 
@@ -188,13 +213,15 @@ Promise.all([
         .attr("class", "poly2")
         .attr("points",function(d) { return d.map(function(d) { return [x(d.x),y(d.y)].join(",");}).join(" "); })
         .attr("stroke", green)
-        .attr("fill", "none");
+        .attr("fill", "none")
+        .style("pointer-events", "none");
 
     svg.append("text")
         .attr("x", x(30))
         .attr("y", y(12.4))
         .attr("class", "chart-label")
         .text("як за покупками")
+        .style("pointer-events", "none");
 
 
 
@@ -202,8 +229,8 @@ Promise.all([
         {"x":31, "y":5},
         {"x":31, "y":10},
         {"x":31,"y":28},
-        {"x":76,"y":28},
-        {"x":76,"y":5}];
+        {"x":215,"y":28},
+        {"x":215,"y":5}];
 
     svg.selectAll("polygon.poly3")
         .data([poly3])
@@ -212,13 +239,15 @@ Promise.all([
         .attr("class", "poly3")
         .attr("points",function(d) { return d.map(function(d) { return [x(d.x),y(d.y)].join(",");}).join(" "); })
         .attr("stroke", green)
-        .attr("fill", "none");
+        .attr("fill", "none")
+        .style("pointer-events", "none");
 
     svg.append("text")
         .attr("x", x(76))
         .attr("y", y(28.4))
         .attr("class", "chart-label")
-        .text("великі пограбування");
+        .text("великі пограбування")
+        .style("pointer-events", "none");;
 
     let defaultCloud = input[1].filter(function(k){
         return k.x === 1 && k.y === 1

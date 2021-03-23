@@ -1,41 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../font/proxima_regular/proxima-nova-regular.eot");
+  src: url("../font/proxima_regular/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("../font/proxima_regular/proxima-nova-regular.woff2") format("woff2"), url("../font/proxima_regular/proxima-nova-regular.woff") format("woff"), url("../font/proxima_regular/proxima-nova-regular.ttf") format("truetype"), url("../font/proxima_regular/proxima-nova-regular.svg#youworkforthem") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../font/proxima_bold/proxima-nova-bold.eot");
+  src: url("../font/proxima_bold/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../font/proxima_bold/proxima-nova-bold.woff2") format("woff2"), url("../font/proxima_bold/proxima-nova-bold.woff") format("woff"), url("../font/proxima_bold/proxima-nova-bold.ttf") format("truetype"), url("../font/proxima_bold/proxima-nova-bold.svg#youworkforthem") format("svg");
+  font-weight: 600;
+  font-style: normal; }
 body {
   background-color: #333;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'ProximaNova', sans-serif;
   color: white; }
 
 header {
+  position: relative;
   display: flex;
-  background-image: url("../img/cover.jpg");
-  min-height: 60vh; }
-
-h1 {
-  margin: 30px auto;
-  text-align: center;
-  font: normal 52px Calibri, sans-serif; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
+  height: 70vh;
+  padding: 50px; }
+  @media (max-width: 800px) {
+    header {
+      padding: 15px; } }
+  header #header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00ff00;
+    margin: auto; }
+    header #header img {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      width: 180px; }
+    header #header h1 {
+      margin: 0;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      text-align: left;
+      font-size: 52px;
+      font-weight: normal; }
+      @media (max-width: 800px) {
+        header #header h1 {
+          font-size: 40px; } }
 
 h2 {
   font-weight: 100;
   font-size: 20px;
   text-align: end; }
 
+p, .subtitle, .chart-title {
+  width: 50%; }
+  @media (max-width: 800px) {
+    p, .subtitle, .chart-title {
+      width: 86%; } }
+
 p {
-  font-size: 18px;
-  width: 50%;
-  margin: 30px auto;
-  line-height: 1.6; }
+  font-size: calc(14px + 0.5vw);
+  line-height: 1.6;
+  margin: 20px auto; }
 
 p.qoute {
-  font-size: 16px;
-  font-style: italic; }
+  font-size: calc(12px + 0.5vw);
+  font-family: 'Roboto Mono', monospace;
+  width: 60%;
+  color: #F0F0F0;
+  margin: 50px auto; }
+  @media (max-width: 800px) {
+    p.qoute {
+      width: 96%; } }
 
-h3.subtitle {
-  text-align: center;
-  margin-top: 80px; }
+.subtitle {
+  font-size: calc(16px + 0.5vw);
+  text-transform: uppercase;
+  margin: 80px auto 30px; }
+
+.chart-title {
+  font-size: calc(14px + 0.5vw);
+  color: #00ff00;
+  margin: 40px auto 10px;
+  font-weight: normal; }
+
+.chart-description {
+  font-style: italic; }
 
 .domain {
   display: none; }
 
-.svg-wrapper {
+#heat-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
@@ -43,8 +99,16 @@ h3.subtitle {
   max-width: 1400px;
   margin: auto; }
   @media (max-width: 800px) {
-    .svg-wrapper {
+    #heat-wrapper {
       display: block; } }
+  #heat-wrapper svg text {
+    letter-spacing: 1px;
+    fill: #F0F0F0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px; }
+    @media (max-width: 800px) {
+      #heat-wrapper svg text {
+        font-size: 18px; } }
 
 #chart-1 {
   margin: auto;
@@ -54,7 +118,7 @@ h3.subtitle {
     #chart-1 {
       width: calc(90% - 2em); } }
 
-#chart-1 svg, #sum_amount svg {
+#chart-1 {
   border: 1px solid red; }
 
 #cloud {
@@ -73,7 +137,7 @@ svg text {
   letter-spacing: 1px;
   fill: white;
   font-family: 'Roboto Mono', monospace;
-  font-size: 13px; }
+  font-size: 15px; }
   @media (max-width: 800px) {
     svg text {
       font-size: 18px; } }
@@ -95,7 +159,7 @@ svg text {
       font-size: 18px; } }
 
 #sum_amount {
-  width: 80%;
+  width: 86%;
   margin: auto;
   max-width: 1200px; }
 
@@ -110,9 +174,10 @@ select#select {
   display: none; }
 
 #related-prod {
-  width: 90%;
-  margin: auto;
-  max-width: 500px; }
+  width: 50%;
+  margin: auto; }
+  #related-prod #related-wrapper {
+    max-width: 500px; }
 
 #portrait {
   margin: auto;
@@ -130,8 +195,15 @@ select#select {
 
 #alko_types {
   width: 100%; }
+  #alko_types text {
+    font-size: 15px; }
 
 .green {
   color: #00ff00; }
+
+#how_many_times {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

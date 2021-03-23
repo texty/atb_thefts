@@ -1,26 +1,84 @@
 $green: #00ff00;
+$svg-text: #F0F0F0;
+$mobile: 800px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../font/proxima_regular/proxima-nova-regular.eot');
+  src: url('../font/proxima_regular/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/proxima_regular/proxima-nova-regular.woff2') format('woff2'),
+  url('../font/proxima_regular/proxima-nova-regular.woff') format('woff'),
+  url('../font/proxima_regular/proxima-nova-regular.ttf') format('truetype'),
+  url('../font/proxima_regular/proxima-nova-regular.svg#youworkforthem') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../font/proxima_bold/proxima-nova-bold.eot');
+  src: url('../font/proxima_bold/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/proxima_bold/proxima-nova-bold.woff2') format('woff2'),
+  url('../font/proxima_bold/proxima-nova-bold.woff') format('woff'),
+  url('../font/proxima_bold/proxima-nova-bold.ttf') format('truetype'),
+  url('../font/proxima_bold/proxima-nova-bold.svg#youworkforthem') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 body {
   background-color: #333;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'ProximaNova', sans-serif;
   color: white;
 }
 
 header {
+  position: relative;
   display: flex;
-  background-image: url("../img/cover.jpg");
-  min-height: 60vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cover.jpg");
+  height: 70vh;
+  padding: 50px;
+  @media(max-width: $mobile){
+    padding: 15px;
+  }
+
+  #header {
+    position: relative;
+    width:  100%;
+    height:100%;
+    border: 2px solid $green;
+    margin: auto;
+
+
+    img {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      width: 180px;
+    }
+
+
+    h1 {
+      margin: 0;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      text-align: left;
+      font-size: 52px;
+      font-weight: normal;
+      @media(max-width: $mobile){
+        font-size: 40px;
+      }
+    }
+  }
 
 }
 
-h1 {
-  //font-family: 'PT Sans', sans-serif;
-  //font-size: 52px;
-  margin: 30px auto;
-  text-align: center;
-  //font-weight: 400;
-  font: normal 52px Calibri, sans-serif;
-}
+
 
 h2 {
   font-weight: 100;
@@ -29,30 +87,53 @@ h2 {
 }
 
 
-p {
-  font-size: 18px;
+p, .subtitle, .chart-title {
   width: 50%;
-  margin: 30px auto;
+  @media(max-width: $mobile){
+    width: 86%;
+  }
+}
+
+p {
+  font-size: calc(14px + 0.5vw);
   line-height: 1.6;
+  margin: 20px auto;
 }
 
 p.qoute {
-  font-size: 16px;
+  font-size: calc(12px + 0.5vw);
+  font-family: 'Roboto Mono', monospace;
+  width: 60%;
+  color: #F0F0F0;
+  margin: 50px auto;
+  @media(max-width: $mobile){
+    width: 96%;
+  }
+}
+
+.subtitle {
+  font-size: calc(16px + 0.5vw);
+  text-transform: uppercase;
+  margin: 80px auto 30px;
+}
+
+.chart-title {
+  font-size: calc(14px + 0.5vw);
+  color: $green;
+  margin: 40px auto 10px;
+  font-weight: normal;
+}
+
+.chart-description {
   font-style: italic;
 }
-
-h3.subtitle {
-  text-align: center;
-  margin-top: 80px;
-}
-
 
 .domain {
   display: none;
 }
 
 
-.svg-wrapper {
+#heat-wrapper {
   position:relative;
   display: flex;
   justify-content: center;
@@ -62,8 +143,21 @@ h3.subtitle {
   @media(max-width:800px) {
     display: block;
   }
-  //height: 100vh;
+
+
+  svg text {
+    letter-spacing: 1px;
+    fill: $svg-text;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    @media(max-width:800px){
+      font-size: 18px;
+    }
+  }
 }
+
+
+
 
 #chart-1 {
   margin: auto;
@@ -74,10 +168,8 @@ h3.subtitle {
   }
 }
 
-#chart-1, #sum_amount {
-  svg {
+#chart-1 {
     border: 1px solid red;
-  }
 }
 
 #cloud {
@@ -104,7 +196,7 @@ svg text {
   letter-spacing: 1px;
   fill: white;
   font-family: 'Roboto Mono', monospace;
-  font-size: 13px;
+  font-size: 15px;
   @media(max-width:800px){
     font-size: 18px;
   }
@@ -133,7 +225,7 @@ svg text {
 
 
 #sum_amount {
-  width: 80%;
+  width: 86%;
   margin: auto;
   max-width: 1200px;
 
@@ -156,9 +248,12 @@ select#select {
 }
 
 #related-prod{
-  width: 90%;
+  width: 50%;
   margin: auto;
-  max-width: 500px;
+
+  #related-wrapper {
+    max-width: 500px;
+  }
 }
 
 #portrait {
@@ -191,10 +286,19 @@ select#select {
 
 #alko_types {
   width: 100%;
-  //max-width: 500px;
-  //margin: auto;
+
+  text {
+    font-size: 15px;
+  }
+
 }
 
 .green {
   color: $green;
+}
+
+#how_many_times {
+  width: 90%;
+  max-width:1200px;
+  margin: auto;
 }

@@ -1,9 +1,9 @@
 /**
  * Created by yevheniia on 18.03.21.
  */
-var sumMargin = {top: 20, right: 30, bottom: 50, left: 60},
+var sumMargin = {top: 20, right: 30, bottom: 60, left: 80},
     sumWidth = 960,
-    sumHeight = 600;
+    sumHeight = 600 + sumMargin.bottom;
 
 var sumSvg =  d3
     .select("#sum_amount")
@@ -21,10 +21,27 @@ var sumColor = d3.scaleSequential(d3.interpolatePlasma)
     .domain([0, 0.3]); // Points per square pixel.
 
 var sumXaxis = sumSvg.append("g")
-    .attr("transform", "translate("+ sumMargin.left + ", " + (sumHeight - sumMargin.bottom/2 ) + ")");
+    .attr("transform", "translate("+ sumMargin.left + ", " + (sumHeight - sumMargin.bottom ) + ")");
+
+sumXaxis
+    .append("text")
+    .attr("transform", "translate(" + (sumWidth - sumMargin.left - 10) + " ," +  (sumMargin.bottom/1.5) + ")")
+    .text("cума, грн")
+    .style("text-anchor","end")
+;
    
 var sumYaxis = sumSvg.append("g")
     .attr("transform", "translate(" + sumMargin.left + ", 0)");
+
+
+sumYaxis
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - sumMargin.left)
+    .attr("x",0 - 10)
+    .attr("dy", "1em")
+    .style("text-anchor","end")
+    .text("кількість, шт.");
     
 
 Promise.all([
@@ -51,14 +68,14 @@ Promise.all([
 
     sumXaxis
         .call(d3.axisBottom(sumX)
-            .tickFormat(d3.format(".2s"))
+            .tickFormat(nFormatter)
             .tickValues([100, 1000, 10000, xMax/2, xMax])
         );
 
     sumYaxis
         .call(d3.axisLeft(sumY)
             .ticks(5)
-            .tickFormat(d3.format(".2s"))
+            .tickFormat(nFormatter)
     );
         
 
