@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @font-face {
   font-family: 'ProximaNova';
@@ -12,9 +13,25 @@
   font-weight: 600;
   font-style: normal; }
 body {
+  margin: 0;
+  padding: 0;
   background-color: #333;
   font-family: 'ProximaNova', sans-serif;
   color: white; }
+
+.soc {
+  position: fixed;
+  top: 5px;
+  right: 25px; }
+  .soc i {
+    font-size: 35px;
+    margin: 0 0 0 5px;
+    max-height: 1em;
+    transition: all 0.5s;
+    color: white;
+    border-bottom: 0; }
+    .soc i:hover {
+      color: #ed6746; }
 
 header {
   position: relative;
@@ -88,8 +105,19 @@ p.qoute {
 .chart-description {
   font-style: italic; }
 
+a.link {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid yellow; }
+
 .domain {
   display: none; }
+
+#heat-note {
+  width: 96%;
+  max-width: 1400px;
+  margin: 10px auto; }
 
 #heat-wrapper {
   position: relative;
@@ -110,16 +138,15 @@ p.qoute {
       #heat-wrapper svg text {
         font-size: 18px; } }
 
+/* heat-графік svg */
 #chart-1 {
   margin: auto;
   height: max-content;
-  width: calc(65% - 4em); }
+  width: calc(65% - 4em);
+  border: 1px solid red; }
   @media (max-width: 800px) {
     #chart-1 {
       width: calc(90% - 2em); } }
-
-#chart-1 {
-  border: 1px solid red; }
 
 #cloud {
   width: 32%; }
@@ -128,7 +155,8 @@ p.qoute {
       width: calc(90% - 2em);
       margin: auto; } }
   #cloud svg {
-    font-weight: 200; }
+    font-weight: 200;
+    border: 1px solid red; }
 
 path.heat-map {
   cursor: pointer; }
@@ -158,6 +186,7 @@ svg text {
     .chart-label {
       font-size: 18px; } }
 
+/* графік сума-кількість */
 #sum_amount {
   width: 86%;
   margin: auto;
@@ -173,18 +202,27 @@ text.cat {
 select#select {
   display: none; }
 
+/* графік що крадуть разом з... */
 #related-prod {
   width: 50%;
   margin: auto; }
+  @media (max-width: 800px) {
+    #related-prod {
+      width: 86%; } }
   #related-prod #related-wrapper {
     max-width: 500px; }
 
+/* графік портрет крадія */
 #portrait {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1400px; }
+  @media (max-width: 800px) {
+    #portrait {
+      width: 86%;
+      justify-content: left; } }
   #portrait div {
     margin-right: 30px; }
 
@@ -193,17 +231,113 @@ select#select {
   width: max-content;
   padding-right: 45px !important; }
 
+/* графік типи алкоголя */
 #alko_types {
   width: 100%; }
   #alko_types text {
     font-size: 15px; }
 
-.green {
-  color: #00ff00; }
-
+/* графік більше-менше-однаково */
 #how_many_times {
   width: 90%;
   max-width: 1200px;
   margin: auto; }
+
+.st7.st8.st9 {
+  font-size: 9px; }
+
+.donate-us {
+  margin: 80px auto 30px auto; }
+  .donate-us hr {
+    grid-column: 1/-1;
+    margin: 20px 0; }
+  .donate-us a.donate-button {
+    text-decoration: none;
+    cursor: pointer;
+    width: max-content;
+    margin: auto;
+    min-height: 50px;
+    padding: 10px;
+    color: white;
+    background-color: #ed6746;
+    display: flex; }
+    .donate-us a.donate-button p {
+      width: 100%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: auto !important;
+      font-weight: 600; }
+  .donate-us a {
+    color: #ed6746;
+    border-bottom: 0; }
+
+/* */
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 80px;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 2fr 13fr 5fr 35fr 5fr 13fr 1fr; }
+  @media (max-width: 800px) {
+    footer {
+      background-color: black;
+      color: white;
+      padding: 30px 1em;
+      display: block; } }
+  footer a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 0; }
+  footer a:hover {
+    color: #ed6746; }
+  footer li, footer p {
+    width: 100%;
+    font-size: 16px;
+    margin: 5px 0; }
+
+/* копірайт колонка */
+#logo-copyright {
+  grid-column: 2/3; }
+  #logo-copyright .copyright {
+    margin-top: 20px; }
+  #logo-copyright a.texty-logo {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #logo-copyright a.texty-logo img {
+      width: 100%;
+      margin: auto; }
+  #logo-copyright #license {
+    grid-column: 2/-1;
+    margin-top: 50px;
+    font-size: 14px; }
+
+/* лінки */
+#guide-block {
+  grid-column: 4/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between; }
+  @media (max-width: 1050px) {
+    #guide-block {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 800px) {
+    #guide-block {
+      display: none; } }
+  #guide-block ul {
+    list-style-type: none;
+    margin: 0; }
+
+/* соціальні мережі */
+#social_buttons {
+  grid-column: -3/-2; }
+  @media (max-width: 800px) {
+    #social_buttons {
+      margin-top: 50px; } }
+  #social_buttons img {
+    width: 30px;
+    margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

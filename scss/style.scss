@@ -1,5 +1,6 @@
 $green: #00ff00;
 $svg-text: #F0F0F0;
+$texty-salmon: #ed6746;
 $mobile: 800px;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
@@ -31,9 +32,34 @@ $mobile: 800px;
 
 
 body {
+  margin:0;
+  padding: 0;
   background-color: #333;
   font-family: 'ProximaNova', sans-serif;
   color: white;
+}
+
+
+.soc {
+  position: fixed;
+  top: 5px;
+  right: 25px;
+
+  i {
+    font-size:35px;
+    margin: 0 0 0 5px;
+    max-height: 1em;
+    transition: all 0.5s;
+    color: white;
+    border-bottom: 0;
+
+
+    &:hover {
+      color: $texty-salmon;
+    }
+  }
+
+
 }
 
 header {
@@ -128,8 +154,27 @@ p.qoute {
   font-style: italic;
 }
 
+a.link {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid yellow;
+}
+
+//.source {
+//  font-size: 14px;
+//  margin-top: 0;
+//}
+
 .domain {
   display: none;
+}
+
+
+#heat-note {
+  width:96%;
+  max-width: 1400px;
+  margin: 10px auto;
 }
 
 
@@ -144,7 +189,6 @@ p.qoute {
     display: block;
   }
 
-
   svg text {
     letter-spacing: 1px;
     fill: $svg-text;
@@ -157,20 +201,17 @@ p.qoute {
 }
 
 
-
-
+/* heat-графік svg */
 #chart-1 {
   margin: auto;
   height: max-content;
   width: calc(65% - 4em);
+  border: 1px solid red;
   @media(max-width: 800px){
     width: calc(90% - 2em);
   }
 }
 
-#chart-1 {
-    border: 1px solid red;
-}
 
 #cloud {
   width: 32%;
@@ -181,10 +222,10 @@ p.qoute {
 
   svg {
    font-weight: 200;
+    border: 1px solid red;
   }
 
 }
-
 
 
 path.heat-map {
@@ -192,7 +233,6 @@ path.heat-map {
 }
 
 svg text {
-  //font-weight: 100;
   letter-spacing: 1px;
   fill: white;
   font-family: 'Roboto Mono', monospace;
@@ -212,7 +252,6 @@ svg text {
   @media(max-width:800px){
     font-size: 15px;
   }
-
 }
 
 .chart-label {
@@ -224,16 +263,14 @@ svg text {
 }
 
 
+
+/* графік сума-кількість */
 #sum_amount {
   width: 86%;
   margin: auto;
   max-width: 1200px;
-
-  svg {
-
-
-  }
 }
+
 
 text.cat {
   font-weight: 600;
@@ -247,14 +284,22 @@ select#select {
  display: none;
 }
 
+
+/* графік що крадуть разом з... */
+
 #related-prod{
   width: 50%;
   margin: auto;
+  @media(max-width: $mobile){
+    width: 86%;
+  }
 
   #related-wrapper {
     max-width: 500px;
   }
 }
+
+/* графік портрет крадія */
 
 #portrait {
   margin: auto;
@@ -262,6 +307,10 @@ select#select {
   flex-wrap: wrap;
   justify-content: center;
   max-width:1400px;
+  @media(max-width: $mobile){
+    width: 86%;
+    justify-content: left;
+  }
 
   div {
     margin-right: 30px;
@@ -269,36 +318,167 @@ select#select {
 
 }
 
-//.prettydropdown > ul {
-//  font-weight: 200;
-//  //color: #00ff00 !important;
-//  font-size:1em;
-//  //background: #333 !important;
-//  //border: 0!important;
-//}
-
 .nice-select {
   color: #333;
   width: max-content;
   padding-right:45px !important;
-
 }
+
+
+
+/* графік типи алкоголя */
 
 #alko_types {
   width: 100%;
-
   text {
     font-size: 15px;
   }
-
 }
 
-.green {
-  color: $green;
-}
+/* графік більше-менше-однаково */
 
 #how_many_times {
   width: 90%;
   max-width:1200px;
   margin: auto;
 }
+
+
+
+.st7.st8.st9 {
+  font-size: 9px;
+}
+
+
+.donate-us {
+  margin: 80px auto 30px auto;
+
+  hr {
+    grid-column: 1/-1;
+    margin: 20px 0;
+  }
+
+  a.donate-button {
+    text-decoration: none;
+    cursor: pointer;
+    width: max-content;
+    margin: auto;
+    min-height: 50px;
+    padding: 10px;
+    color: white;
+    background-color: $texty-salmon;
+    display: flex;
+
+    p {
+      width: 100%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: auto !important;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: $texty-salmon;
+    border-bottom: 0;
+  }
+}
+
+
+/* */
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 80px;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 2fr 13fr 5fr 35fr 5fr 13fr 1fr ;
+  @media(max-width: $mobile) {
+    background-color: black;
+    color: white;
+    padding: 30px 1em;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 0;
+  }
+
+  a:hover {
+    color: $texty-salmon;
+  }
+
+  li, p {
+    width: 100%;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+}
+
+/* копірайт колонка */
+#logo-copyright {
+  grid-column: 2/3;
+
+  .copyright {
+    margin-top: 20px;
+  }
+
+  a.texty-logo {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      margin:auto;
+    }
+  }
+
+  #license {
+    grid-column: 2/-1;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* лінки */
+#guide-block {
+  grid-column: 4/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  @media(max-width: 1050px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media(max-width: $mobile){
+    display: none;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+}
+
+
+/* соціальні мережі */
+#social_buttons {
+  grid-column: -3/-2;
+  @media(max-width: $mobile) {
+    margin-top: 50px;
+  }
+
+  img {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+
+

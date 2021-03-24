@@ -68,14 +68,14 @@ Promise.all([
 
     sumXaxis
         .call(d3.axisBottom(sumX)
-            .tickFormat(nFormatter)
+            .tickFormat(nFormatter, 0)
             .tickValues([100, 1000, 10000, xMax/2, xMax])
         );
 
     sumYaxis
         .call(d3.axisLeft(sumY)
             .ticks(5)
-            .tickFormat(nFormatter)
+            .tickFormat(nFormatter, 1)
     );
         
 

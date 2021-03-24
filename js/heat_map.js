@@ -87,7 +87,7 @@ var _margin = {top: 10, right: 10, bottom: 10, left: 20},
 
     _width = d3.select("#cloud").node().getBoundingClientRect().width - _margin.left - _margin.right,
 
-    _height = d3.select("#chart-1>svg").node().getBoundingClientRect().height - _margin.top;
+    _height = d3.select("#chart-1>svg").node().getBoundingClientRect().height + 10;
 
 
 
@@ -155,7 +155,7 @@ Promise.all([
                 return k.x === xInvert && k.y === yInvert
             });
 
-            d3.select("#cloud > h2").text(xInvert + "/"+ yInvert +" | крадіжок: "+ filtered[0].thefts_amount );
+            d3.select("#heat-note").text(xInvert + "/"+ yInvert +" | крадіжок: "+ filtered[0].thefts_amount );
             drawWordCloud(filtered)
 
 
@@ -253,7 +253,7 @@ Promise.all([
         return k.x === 1 && k.y === 1
     });
 
-    d3.select("#cloud > h2").text(1 + "/"+ 1 +" | крадіжок: "+ defaultCloud[0].thefts_amount );
+    d3.select("#heat-note").text(1 + "/"+ 1 +" | крадіжок: "+ defaultCloud[0].thefts_amount );
     drawWordCloud(defaultCloud)
 
 
@@ -267,7 +267,7 @@ function drawWordCloud(df){
     _svg.selectAll("*").remove();
 
 
-    _height = d3.select("#chart-1>svg").node().getBoundingClientRect().height - _margin.top;
+    _height = d3.select("#chart-1>svg").node().getBoundingClientRect().height;
     _width = d3.select("#cloud").node().getBoundingClientRect().width - _margin.left;
 
     d3.select("#cloud > svg")
