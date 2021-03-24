@@ -276,7 +276,7 @@ function drawWordCloud(df){
 
     let font_size = d3.scaleLinear()
         .domain(d3.extent(df, function(d){ return d.freq }))
-        .range([8, 40]);
+        .range([8, 35]);
 
 
 
