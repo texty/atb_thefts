@@ -68,7 +68,7 @@ header {
   position: relative;
   display: flex;
   display: grid;
-  grid-template-columns: [start] 2fr [logo-start] 15fr [rubrics-start] 55fr [rubrics-end] 2fr [end] ;
+  grid-template-columns: 2fr 15fr 55fr 2fr;
   grid-template-rows: 2.5em auto;
   align-items: center;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cover.jpg");
@@ -82,7 +82,7 @@ header {
   .rubrics-container {
     font-family: 'ProximaNova', sans-serif;
     color: white;
-    grid-column: rubrics-start/rubrics-end;
+    grid-column: 3/4;
     align-items: center;
     @media(max-width: $mobile) {
       display: block;
@@ -114,13 +114,13 @@ header {
   }
 
   .texty-logo {
-    grid-column-start: logo-start;
+    grid-column-start: 2;
     width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     @media(max-width: $mobile) {
-      grid-column: 1/3;
+      grid-column-start: 2;
       justify-content: center;
       grid-row: 1/2;
       margin-left: 1em;
@@ -412,7 +412,10 @@ select#select {
 
 
 .st7.st8.st9 {
-  font-size: 9px;
+  font-size: 9px !important;
+  @media(max-width: $mobile){
+    font-size: 11px !important;
+  }
 }
 
 

@@ -151,7 +151,7 @@ d3.csv("data/related_prod.csv").then(function(data) {
             .attr("class", "label2")
             .merge(dep_number)
             .transition().duration(0)
-            .attr("x", function(d) { return  -30; })
+            .attr("x", function(d) { return  -40; })
             .attr("y", function(d) { return detail_yScale(d.detail)  +  detail_yScale.bandwidth()/2 })
             .text(function(d){ return d.freq })
             .attr("fill", svgTextColor);
