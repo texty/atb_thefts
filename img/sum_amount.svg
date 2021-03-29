@@ -42,8 +42,8 @@
      id="namedview476"
      showgrid="false"
      inkscape:zoom="0.86325953"
-     inkscape:cx="369.47239"
-     inkscape:cy="410.94774"
+     inkscape:cx="573.5754"
+     inkscape:cy="395.00443"
      inkscape:window-x="61"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -1003,8 +1003,8 @@
        y="-80"
        x="-10"
        dy="1em"
-       style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:15px;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:-79.5156px 0px;transform:matrix(6.12323e-17, -1, 1, 6.12323e-17, 0, 0);transform-origin:0px 0px;fill:rgb(255, 255, 255);text-anchor:end;"
-       id="text276">кількість, шт.</text>
+       style="font-size:15px;font-family:'Roboto Mono', monospace;letter-spacing:1px;text-anchor:end;white-space:nowrap;display:block;fill:#ffffff"
+       id="text276">кількість згадувань</text>
     <path
        class="domain"
        stroke="currentColor"
