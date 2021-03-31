@@ -10,7 +10,6 @@
    width="100%"
    viewBox="0 0 960 660"
    version="1.1"
- 
    id="svg474"
    sodipodi:docname="sum_amount.svg"
    inkscape:version="0.92.4 (unknown)">
@@ -22,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,9 +40,9 @@
      inkscape:window-height="1056"
      id="namedview476"
      showgrid="false"
-     inkscape:zoom="0.86325953"
-     inkscape:cx="573.5754"
-     inkscape:cy="395.00443"
+     inkscape:zoom="2.4416667"
+     inkscape:cx="611.11765"
+     inkscape:cy="412.55175"
      inkscape:window-x="61"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -218,7 +217,7 @@
     <path
        class="heat-map"
        d="M713.3428233240074,113L717,110.56188189998412L718.822195668075,109L721,106.82219566807498L722.5618821024301,105L725,101.34282339066087L725.2142646035411,101L726.696951930554,97L727.3888724364157,93L727.5945786645208,89L727.3888724364157,85L726.696951930554,81L725.2142646035411,77L725,76.65717660933913L722.5618821024301,73L721,71.17780433192503L718.822195668075,69L717,67.4381181000159L713.3428233240074,65L713,64.78573539645886L709,63.303048544354L705,62.61112756358426L701,62.405421832549976L697,62.61112756358426L693,63.303048544354L689,64.78573539645886L688.6571766759926,65L685,67.4381181000159L683.177804331925,69L681,71.17780433192503L679.4381178975699,73L677,76.65717660933913L676.7857353964589,77L675.303048069446,81L674.6111275635843,85L674.4054213354792,89L674.6111275635843,93L675.303048069446,97L676.7857353964589,101L677,101.34282339066087L679.4381178975699,105L681,106.82219566807498L683.177804331925,109L685,110.56188189998412L688.6571766759926,113L689,113.21426460354112L693,114.696951455646L697,115.38887243641574L701,115.59457816745001L705,115.38887243641574L709,114.696951455646L713,113.21426460354112ZM861.3620342463241,145L865,144.79789087380237L869,144.0522447103874L873,142.45443149382507L874.9392420764153,141L877,139.28270163039858L879.2827016303986,137L881,134.93924207641533L882.454431493825,133L884.0522449209975,129L884.7978909149723,125L885,121.36203424632419L885.0244617643099,121L885,120.63796575367581L884.7978909149723,117L884.0522449209975,113L882.454431493825,109L881,107.06075792358467L879.2827016303986,105L877,102.71729836960142L874.9392420764153,101L873,99.54556850617493L869,97.94775528961259L865,97.20210912619763L861.3620342463241,97L861,96.97553823569015L860.6379657536759,97L857,97.20210912619763L853,97.94775528961259L849,99.54556850617493L847.0607579235847,101L845,102.71729836960142L842.7172983696014,105L841,107.06075792358467L839.545568506175,109L837.9477550790025,113L837.2021090850277,117L837,120.63796575367581L836.9755382356901,121L837,121.36203424632419L837.2021090850277,125L837.9477550790025,129L839.545568506175,133L841,134.93924207641533L842.7172983696014,137L845,139.28270163039858L847.0607579235847,141L849,142.45443149382507L853,144.0522447103874L857,144.79789087380237L860.6379657536759,145L861,145.02446176430985ZM656.9521659986348,237L657,236.95216599863477L659.1736924881923,233L659.8284589135924,229L659.1736924881923,225L657,221.04783400136523L656.9521659986348,221L653,218.82630751180773L649,218.1715427422027L645,218.82630751180773L641.0478340013652,221L641,221.04783400136523L638.8263075118077,225L638.1715410864076,229L638.8263075118077,233L641,236.95216599863477L641.0478340013652,237L645,239.17369248819227L649,239.8284572577973L653,239.17369248819227ZM717.1078565693659,257L721,253.95804517957112L722.1502855418794,253L725,250.52461101725567L726.5828303999482,249L729,246.60620412171693L730.3615596124286,245L732.3668214202371,241L733,238.31613621842507L733.263545152561,237L733.3154337240633,233L733,230.58666715969298L732.7481252400366,229L731.3421907226686,225L729,221.02272599412794L728.9842722053169,221L725.3593804579548,217L725,216.5460796708319L722.3557103112202,213L721,210.77642307274436L720.0624891607524,209L718.2975255269748,205L717,202.27436188908433L716.4619214387127,201L714.3595350883917,197L713,195.11790983535687L710.5007396441471,193L709,192.09046087285998L705,190.83292219100167L701,190.45905936715326L697,190.83292219100167L693,192.09046087285998L691.4992603558529,193L689,195.45900851788755L688.0471881166627,197L686.7218699671156,201L686.259116555239,205L686.5017528819341,209L687.331405739679,213L688.9709015144078,217L689,217.04550074444285L691.7985478723544,221L693,223.30682801603564L693.9715334392369,225L695.1958443426693,229L695.4463347422375,233L694.8692609872609,237L694.6473150233896,241L694.7432458580602,245L695.2161875687653,249L696.6328086823236,253L697,253.58304882065312L700.4169511793468,257L701,257.36719131767643L705,258.7838124312346L709,259.25675317712825L713,258.6944126157371L717,257.07644959916837ZM537.1394988021447,289L541,288.8369565095193L545,287.6809645016554L549,285.1644114841911L549.2116415060492,285L552.3347282213884,281L553,279.2068165884544L553.7008890207356,277L553.9094833408737,273L553.061225458033,269L553,268.8788618019381L550.4495377170892,265L549,263.825975652381L545,261.6221773359841L541.7990962999665,261L541,260.86893079899335L538.5668359931901,261L537,261.0917576413905L533,262.33367276906813L529,264.9930213512334L528.991325993468,265L525.9652098895541,269L525,271.7346215998452L524.6114548508273,273L524.4257265687974,277L525,279.67721529597094L525.3361237959699,281L527.9691688255722,285L529,285.8485055469367L533,288.1672183833596L536.9691427057331,289L537,289.0054999696395Z"
-       style="cursor:pointer;height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;transform-origin:0px 0px;fill:rgb(240, 249, 33);stroke-linejoin:round;stroke-width:0.5px;d:path(&quot;M 713.343 113 L 717 110.562 L 718.822 109 L 721 106.822 L 722.562 105 L 725 101.343 L 725.214 101 L 726.697 97 L 727.389 93 L 727.595 89 L 727.389 85 L 726.697 81 L 725.214 77 L 725 76.6572 L 722.562 73 L 721 71.1778 L 718.822 69 L 717 67.4381 L 713.343 65 L 713 64.7857 L 709 63.303 L 705 62.6111 L 701 62.4054 L 697 62.6111 L 693 63.303 L 689 64.7857 L 688.657 65 L 685 67.4381 L 683.178 69 L 681 71.1778 L 679.438 73 L 677 76.6572 L 676.786 77 L 675.303 81 L 674.611 85 L 674.405 89 L 674.611 93 L 675.303 97 L 676.786 101 L 677 101.343 L 679.438 105 L 681 106.822 L 683.178 109 L 685 110.562 L 688.657 113 L 689 113.214 L 693 114.697 L 697 115.389 L 701 115.595 L 705 115.389 L 709 114.697 L 713 113.214 Z M 861.362 145 L 865 144.798 L 869 144.052 L 873 142.454 L 874.939 141 L 877 139.283 L 879.283 137 L 881 134.939 L 882.454 133 L 884.052 129 L 884.798 125 L 885 121.362 L 885.024 121 L 885 120.638 L 884.798 117 L 884.052 113 L 882.454 109 L 881 107.061 L 879.283 105 L 877 102.717 L 874.939 101 L 873 99.5456 L 869 97.9478 L 865 97.2021 L 861.362 97 L 861 96.9755 L 860.638 97 L 857 97.2021 L 853 97.9478 L 849 99.5456 L 847.061 101 L 845 102.717 L 842.717 105 L 841 107.061 L 839.546 109 L 837.948 113 L 837.202 117 L 837 120.638 L 836.976 121 L 837 121.362 L 837.202 125 L 837.948 129 L 839.546 133 L 841 134.939 L 842.717 137 L 845 139.283 L 847.061 141 L 849 142.454 L 853 144.052 L 857 144.798 L 860.638 145 L 861 145.024 Z M 656.952 237 L 657 236.952 L 659.174 233 L 659.828 229 L 659.174 225 L 657 221.048 L 656.952 221 L 653 218.826 L 649 218.172 L 645 218.826 L 641.048 221 L 641 221.048 L 638.826 225 L 638.172 229 L 638.826 233 L 641 236.952 L 641.048 237 L 645 239.174 L 649 239.828 L 653 239.174 Z M 717.108 257 L 721 253.958 L 722.15 253 L 725 250.525 L 726.583 249 L 729 246.606 L 730.362 245 L 732.367 241 L 733 238.316 L 733.264 237 L 733.315 233 L 733 230.587 L 732.748 229 L 731.342 225 L 729 221.023 L 728.984 221 L 725.359 217 L 725 216.546 L 722.356 213 L 721 210.776 L 720.063 209 L 718.298 205 L 717 202.274 L 716.462 201 L 714.36 197 L 713 195.118 L 710.501 193 L 709 192.09 L 705 190.833 L 701 190.459 L 697 190.833 L 693 192.09 L 691.499 193 L 689 195.459 L 688.047 197 L 686.722 201 L 686.259 205 L 686.502 209 L 687.331 213 L 688.971 217 L 689 217.046 L 691.799 221 L 693 223.307 L 693.972 225 L 695.196 229 L 695.446 233 L 694.869 237 L 694.647 241 L 694.743 245 L 695.216 249 L 696.633 253 L 697 253.583 L 700.417 257 L 701 257.367 L 705 258.784 L 709 259.257 L 713 258.694 L 717 257.076 Z M 537.14 289 L 541 288.837 L 545 287.681 L 549 285.164 L 549.212 285 L 552.335 281 L 553 279.207 L 553.701 277 L 553.909 273 L 553.061 269 L 553 268.879 L 550.45 265 L 549 263.826 L 545 261.622 L 541.799 261 L 541 260.869 L 538.567 261 L 537 261.092 L 533 262.334 L 529 264.993 L 528.991 265 L 525.965 269 L 525 271.735 L 524.611 273 L 524.426 277 L 525 279.677 L 525.336 281 L 527.969 285 L 529 285.849 L 533 288.167 L 536.969 289 L 537 289.005 Z&quot;);"
+       style="cursor:pointer;height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;transform-origin:0px 0px;fill:rgb(240, 249, 33);stroke-linejoin:round;stroke-width:0.5px;d:path('M 713.343 113 L 717 110.562 L 718.822 109 L 721 106.822 L 722.562 105 L 725 101.343 L 725.214 101 L 726.697 97 L 727.389 93 L 727.595 89 L 727.389 85 L 726.697 81 L 725.214 77 L 725 76.6572 L 722.562 73 L 721 71.1778 L 718.822 69 L 717 67.4381 L 713.343 65 L 713 64.7857 L 709 63.303 L 705 62.6111 L 701 62.4054 L 697 62.6111 L 693 63.303 L 689 64.7857 L 688.657 65 L 685 67.4381 L 683.178 69 L 681 71.1778 L 679.438 73 L 677 76.6572 L 676.786 77 L 675.303 81 L 674.611 85 L 674.405 89 L 674.611 93 L 675.303 97 L 676.786 101 L 677 101.343 L 679.438 105 L 681 106.822 L 683.178 109 L 685 110.562 L 688.657 113 L 689 113.214 L 693 114.697 L 697 115.389 L 701 115.595 L 705 115.389 L 709 114.697 L 713 113.214 Z M 861.362 145 L 865 144.798 L 869 144.052 L 873 142.454 L 874.939 141 L 877 139.283 L 879.283 137 L 881 134.939 L 882.454 133 L 884.052 129 L 884.798 125 L 885 121.362 L 885.024 121 L 885 120.638 L 884.798 117 L 884.052 113 L 882.454 109 L 881 107.061 L 879.283 105 L 877 102.717 L 874.939 101 L 873 99.5456 L 869 97.9478 L 865 97.2021 L 861.362 97 L 861 96.9755 L 860.638 97 L 857 97.2021 L 853 97.9478 L 849 99.5456 L 847.061 101 L 845 102.717 L 842.717 105 L 841 107.061 L 839.546 109 L 837.948 113 L 837.202 117 L 837 120.638 L 836.976 121 L 837 121.362 L 837.202 125 L 837.948 129 L 839.546 133 L 841 134.939 L 842.717 137 L 845 139.283 L 847.061 141 L 849 142.454 L 853 144.052 L 857 144.798 L 860.638 145 L 861 145.024 Z M 656.952 237 L 657 236.952 L 659.174 233 L 659.828 229 L 659.174 225 L 657 221.048 L 656.952 221 L 653 218.826 L 649 218.172 L 645 218.826 L 641.048 221 L 641 221.048 L 638.826 225 L 638.172 229 L 638.826 233 L 641 236.952 L 641.048 237 L 645 239.174 L 649 239.828 L 653 239.174 Z M 717.108 257 L 721 253.958 L 722.15 253 L 725 250.525 L 726.583 249 L 729 246.606 L 730.362 245 L 732.367 241 L 733 238.316 L 733.264 237 L 733.315 233 L 733 230.587 L 732.748 229 L 731.342 225 L 729 221.023 L 728.984 221 L 725.359 217 L 725 216.546 L 722.356 213 L 721 210.776 L 720.063 209 L 718.298 205 L 717 202.274 L 716.462 201 L 714.36 197 L 713 195.118 L 710.501 193 L 709 192.09 L 705 190.833 L 701 190.459 L 697 190.833 L 693 192.09 L 691.499 193 L 689 195.459 L 688.047 197 L 686.722 201 L 686.259 205 L 686.502 209 L 687.331 213 L 688.971 217 L 689 217.046 L 691.799 221 L 693 223.307 L 693.972 225 L 695.196 229 L 695.446 233 L 694.869 237 L 694.647 241 L 694.743 245 L 695.216 249 L 696.633 253 L 697 253.583 L 700.417 257 L 701 257.367 L 705 258.784 L 709 259.257 L 713 258.694 L 717 257.076 Z M 537.14 289 L 541 288.837 L 545 287.681 L 549 285.164 L 549.212 285 L 552.335 281 L 553 279.207 L 553.701 277 L 553.909 273 L 553.061 269 L 553 268.879 L 550.45 265 L 549 263.826 L 545 261.622 L 541.799 261 L 541 260.869 L 538.567 261 L 537 261.092 L 533 262.334 L 529 264.993 L 528.991 265 L 525.965 269 L 525 271.735 L 524.611 273 L 524.426 277 L 525 279.677 L 525.336 281 L 527.969 285 L 529 285.849 L 533 288.167 L 536.969 289 L 537 289.005 Z');opacity:0.247"
        id="path48"
        fill="#f0f921"
        opacity="1" />
@@ -1088,233 +1087,185 @@
      class="cat white"
      x="587.79523"
      y="332.57678"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text306">мʼясо</text>
-  <text
-     class="cat white"
-     x="705"
-     y="90"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:740.203px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
-     id="text308">солодощі</text>
-  <text
-     class="cat white"
-     x="547.54266"
-     y="269.15698"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
-     id="text310">сир</text>
-  <text
-     class="cat white"
-     x="536.74744"
-     y="283.60068"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
-     id="text312">молочка</text>
-  <text
-     class="cat white"
-     x="706"
-     y="206"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:745.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
-     id="text314">косметика</text>
-  <text
-     class="cat white"
-     x="710"
-     y="250"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:727.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
-     id="text316">кава</text>
-  <text
-     class="cat white"
-     x="866"
-     y="120"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:901.203px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
-     id="text318">алкоголь</text>
-  <text
-     class="cat white"
-     x="652"
-     y="229"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:682.797px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
-     id="text320">ковбаса</text>
   <text
      class="cat white"
      x="576.62"
      y="414.73758"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text322">техніка</text>
-  <text
-     class="cat white"
-     x="725"
-     y="233"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:742.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
-     id="text324">ікра</text>
   <text
      class="cat white"
      x="476.56656"
      y="321.40955"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text326">консерви рибні</text>
   <text
      class="cat white"
      x="389"
      y="377"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:450.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:450.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text330">побутова хімія</text>
   <text
      class="cat white"
      x="416"
      y="396"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:438px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:438px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text332">напої</text>
   <text
      class="cat white"
      x="245"
      y="415"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:271.406px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:271.406px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text334">спеції</text>
   <text
      class="cat white"
      x="183.27519"
      y="476.09039"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text336">zoo</text>
   <text
      class="cat white"
      x="355.26239"
      y="512.47522"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text338">морепродукти</text>
   <text
      class="cat white"
      x="599"
      y="538"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:638.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:638.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text340">майно АТБ</text>
   <text
      class="cat white"
      x="507.03754"
      y="416.40955"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text342">дитячі</text>
   <text
      class="cat white"
      x="506.45837"
-     y="427.41437"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     y="429.41437"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
      id="text1291">
     <tspan
-       style="line-height:16.25px"
+       style="line-height:16.25px;stroke:none"
        id="tspan1293">товари</tspan>
   </text>
   <text
      class="cat white"
      x="330.4072"
      y="412.99521"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text344">фрукти</text>
   <text
      class="cat white"
      x="166.26241"
      y="601.39838"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text346">консерви</text>
   <text
      class="cat white"
      x="166.05763"
      y="612.45642"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text1295">овочеві</text>
   <text
      class="cat white"
      x="315.73761"
      y="449.2352"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text348">снеки</text>
   <text
      class="cat white"
      x="252"
      y="449"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:269.203px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:269.203px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text350">хліб</text>
   <text
      class="cat white"
      x="207"
      y="497"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:224.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:224.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text352">соус</text>
   <text
      class="cat white"
      x="447"
      y="363"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:464.203px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:464.203px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text354">одяг</text>
   <text
      class="cat white"
      x="440"
      y="480"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:488.406px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:488.406px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text356">риба солона</text>
   <text
      class="cat white"
      x="212.1312"
      y="581.60638"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text358">консерви мʼясні</text>
   <text
      class="cat white"
      x="404"
      y="557"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:430.406px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:430.406px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text360">взуття</text>
   <text
      class="cat white"
      x="276.7048"
      y="515.76477"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text362">олія</text>
   <text
      class="cat white"
      x="296.81439"
      y="494.9368"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text364">напівфабрикати</text>
   <text
      class="cat white"
      x="324"
      y="395"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:345.594px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:345.594px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text370">овочі</text>
   <text
      class="cat white"
      x="76.255989"
      y="541.49762"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text372">макарони</text>
   <text
      class="cat white"
      x="487"
      y="395"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:504.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:504.609px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text374">риба</text>
   <text
      class="cat white"
      x="234.53841"
      y="483.15839"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text376">бакалія</text>
   <text
      class="cat white"
      x="334.80081"
      y="461.18561"
-     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:#374890;stroke-width:0.5px"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px;"
      id="text380">канцтовари</text>
   <text
      class="cat white"
      x="455"
      y="345"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:485.797px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:485.797px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text382">цигарки</text>
   <text
      class="cat white"
      x="192"
      y="562"
-     style="display:block;font-family:&quot;Roboto Mono&quot;, monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:236px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(55, 72, 144);stroke-width:0.5px;"
+     style="display:block;font-family:'Roboto Mono', monospace;font-size:13px;font-weight:600;height:auto;letter-spacing:1px;overflow-x:visible;overflow-y:visible;white-space:nowrap;width:auto;perspective-origin:236px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:none;stroke-width:0.5px;"
      id="text384">сухофрукти</text>
   <circle
      cx="581.7713"
@@ -1331,29 +1282,27 @@
      id="circle392" />
   <circle
      cx="543.97614"
-     cy="265.47098"
+     cy="263.47098"
      r="2"
      style="fill:#ffffff"
      id="circle394" />
   <circle
-     cx="532.36176"
-     cy="280.11945"
+     cx="534.53375"
+     cy="283.56744"
      r="2"
      style="fill:#ffffff"
      id="circle396" />
   <circle
-     cx="701"
-     cy="206"
+     cx="708.15839"
+     cy="197.2216"
      r="2"
-     fill="white"
-     style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);cx:701px;cy:206px;r:2px;"
+     style="fill:#ffffff"
      id="circle398" />
   <circle
-     cx="705"
-     cy="250"
+     cx="701"
+     cy="254"
      r="2"
-     fill="white"
-     style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);cx:705px;cy:250px;r:2px;"
+     style="fill:#ffffff"
      id="circle400" />
   <circle
      cx="861"
@@ -1376,11 +1325,10 @@
      style="fill:#ffffff"
      id="circle406" />
   <circle
-     cx="720"
-     cy="233"
+     cx="727.01361"
+     cy="231.40721"
      r="2"
-     fill="white"
-     style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);cx:720px;cy:233px;r:2px;"
+     style="fill:#ffffff"
      id="circle408" />
   <circle
      cx="473"
@@ -1557,4 +1505,56 @@
      fill="white"
      style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;transform-origin:0px 0px;fill:rgb(255, 255, 255);cx:187px;cy:562px;r:2px;"
      id="circle468" />
+  <text
+     class="cat white"
+     x="730.18768"
+     y="71.058022"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
+     id="text308">солодощі</text>
+  <text
+     class="cat white"
+     x="870.63361"
+     y="95.673599"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
+     id="text318">алкоголь</text>
+  <text
+     class="cat white"
+     x="714.45636"
+     y="196.04453"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
+     id="text314">косметика</text>
+  <text
+     class="cat white"
+     x="734.83008"
+     y="235.35797"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
+     id="text324">ікра</text>
+  <text
+     class="cat white"
+     x="575.54205"
+     y="220.30775"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ed7953;fill-opacity:1;stroke:none;stroke-width:0.5px"
+     id="text320">
+    <tspan
+       style="fill:#ffffff"
+       id="tspan2422">ковбаса</tspan>
+  </text>
+  <text
+     class="cat white"
+     x="666.72406"
+     y="265.54712"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
+     id="text316">кава</text>
+  <text
+     class="cat white"
+     x="519.90649"
+     y="257.74692"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
+     id="text310">сир</text>
+  <text
+     class="cat white"
+     x="537.07391"
+     y="296.98831"
+     style="font-weight:600;font-size:13px;font-family:'Roboto Mono', monospace;letter-spacing:1px;white-space:nowrap;display:block;fill:#ffffff;stroke:none;stroke-width:0.5px"
+     id="text312">молочка</text>
 </svg>
