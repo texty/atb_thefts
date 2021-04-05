@@ -407,9 +407,12 @@ select#select {
 /* графік більше-менше-однаково */
 
 #how_many_times {
-  width: 90%;
+  width: 50%;
   max-width:1200px;
   margin: auto;
+  @media(max-width: $mobile){
+    width: 86%;
+  }
 }
 
 

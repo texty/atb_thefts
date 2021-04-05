@@ -297,9 +297,12 @@ select#select {
 
 /* графік більше-менше-однаково */
 #how_many_times {
-  width: 90%;
+  width: 50%;
   max-width: 1200px;
   margin: auto; }
+  @media (max-width: 800px) {
+    #how_many_times {
+      width: 86%; } }
 
 .st7.st8.st9 {
   font-size: 7px !important; }
