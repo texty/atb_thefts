@@ -198,13 +198,14 @@ a.link {
 
 /* heat-графік svg */
 #chart-1 {
-  margin: auto;
+  margin: 0 1em;
   height: max-content;
   width: calc(65% - 4em);
   border: 1px solid red; }
   @media (max-width: 800px) {
     #chart-1 {
-      width: calc(90% - 2em); } }
+      width: calc(90% - 2em);
+      margin: auto; } }
 
 #cloud {
   width: 32%; }
