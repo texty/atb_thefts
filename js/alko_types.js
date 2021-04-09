@@ -3,7 +3,6 @@
  */
 d3.csv("data/alko_types.csv").then(function(data) {
 
-
     var keys = data.columns.slice(1);
 
     keys.sort(function(a, b){

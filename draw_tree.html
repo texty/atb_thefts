@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>Віскі, шоколад, червона ікра. Що найчастіше крадуть в АТБ</title>
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/nice-select2.css">
+
+    <!-- Scripts -->
+    <script src="lib/nice-select2.js"></script>
+</head>
+<body>
+
+<div id="how_many_times"></div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3-contour.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.1/chroma.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+
+<script>
+    var margin = {top: 20, right: 150, bottom: 30, left: 50},
+            width = 800 - margin.left - margin.right,
+            height = 600 - margin.top - margin.bottom;
+
+    // array of curve functions and tites
+    var curveArray = [
+        {"d3Curve":d3.curveLinear,"curveTitle":"curveLinear"},
+        {"d3Curve":d3.curveStep,"curveTitle":"curveStep"},
+        {"d3Curve":d3.curveStepBefore,"curveTitle":"curveStepBefore"},
+        {"d3Curve":d3.curveStepAfter,"curveTitle":"curveStepAfter"},
+        {"d3Curve":d3.curveBasis,"curveTitle":"curveBasis"},
+        {"d3Curve":d3.curveCardinal,"curveTitle":"curveCardinal"},
+        {"d3Curve":d3.curveMonotoneX,"curveTitle":"curveMonotoneX"},
+        {"d3Curve":d3.curveCatmullRom,"curveTitle":"curveCatmullRom"}
+    ];
+
+    // parse the date / time
+
+    // set the ranges
+    var x = d3.scaleTime().range([0, width]);
+    var y = d3.scaleLinear().range([height, 0]);
+
+    // define the line
+    var valueline = d3.line()
+            .curve(d3.curveCatmullRomOpen)
+            .x(function(d) { return x(d.value); })
+            .y(function(d) { return y(d.count); });
+
+    // append the svg obgect to the body of the page
+    // appends a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("body").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                    "translate(" + margin.left + "," + 0 + ")");
+
+
+    // Get the data
+    d3.csv("data/tree_data.csv").then(function(data) {
+        data.forEach(function(d) {
+            d.dif = +d.dif;
+        });
+
+        let min = -300;
+        let max = 300;
+
+
+        const d = (max-min)/9;
+        var color  =  d3.scaleThreshold()
+
+        //last
+                .range(['#6532ff', '#8152e8', '#916ed0', '#9b87b9', '#a0a0a0', '#b188a1', '#bf6da1', '#ca4ca2', '#d300a2'])
+                .domain([min + d*1, min + d*2,min + d*3,min + d*4,min + d*5,min + d*6,min + d*7,min + d*8]);
+
+
+        var colorLess = d3.scaleSequential()
+                .domain([max, min ])
+                .interpolator(d3.interpolateBlues);
+
+        var colorMore = d3.scaleSqrt()
+
+                .domain([min, max])
+                .range(["white", "#D75BE0"]);
+
+
+        x.domain([50,150]);
+        y.domain([0,10]);
+
+        data.forEach(function(row){
+            row.ystart = +row.ystart;
+            row.yend = +row.yend;
+            row.start = +row.start;
+            row.end = +row.end;
+            row.curvature = +row.curvature;
+
+            var x1 = x(row.start),
+                    x2 = x(row.end),
+                    y1 = y(row.ystart),
+                    y2 = y(row.yend),
+                    vector = row.color == "меншу" ? 1 : 0;
+
+            var path = d3.path();
+
+            if(x1 === x2) {
+
+                path.moveTo(x1, y1);
+                path.lineTo(x2, y2);
+                svg.append("path")
+                        .attr("class", "branch")
+                        .attr("d", path.toString())
+                        .attr("stroke", function(d){
+                            return  "#A0A0A0";
+                        })
+                        .attr("stroke-width", 2)
+                        .attr("fill", "none");
+            } else  {
+                svg.append("path")
+                        .attr("class", "branch")
+                        .attr('d', function (d) {
+                            return ['M', x1, y1,
+                                'A',
+                                211,
+                                211 + row.curvature , ',',
+                                147, ',',
+                                0, vector, ',',
+                                x2, y2]
+                                    .join(' ');
+                        })
+                        .attr("stroke", function (d){
+                            return color(row.dif)
+                        })
+                        .attr("stroke-width", 2)
+                        .attr("fill", "none");
+            }
+        });
+
+        // Add the Y Axis
+        var xAxis = svg.append("g")
+                        .attr("class", "axis")
+                        .call(d3.axisRight(y)
+                                .tickSizeInner(width)
+                                .tickFormat(function(d, i){
+                                    return d + 1 + " крадіжка"})
+                        )
+                        .style("stroke-dasharray", "5 5")
+
+                ;
+
+        xAxis.selectAll("text")
+                .style("fill", "grey")
+                .attr("dy", "-1.7em");
+        //.attr("opacity", 0.5)
+
+        xAxis.selectAll("line")
+                .attr("opacity", 0.1)
+    });
+
+</script>
+
+</body>
+</html>
