@@ -44,17 +44,14 @@ d3.csv("data/related_prod.csv").then(function(data) {
 
 
 
-
-
-
     function drawBarChart(product){
-
         var filtered = data.filter(function(d){
                 return d.target === product
             });
 
 
-        var new_width = d3.select("#related-wrapper").node().getBoundingClientRect().width - detail_margin.left - detail_margin.right;
+        var new_width = d3.select("#related-wrapper").node()
+                .getBoundingClientRect().width - detail_margin.left - detail_margin.right;
 
 
         d3.select("#related-prod").select("svg")
@@ -69,7 +66,6 @@ d3.csv("data/related_prod.csv").then(function(data) {
         detail_yScale
             .range([0, 40 * filtered.length])
             .domain(filtered.map(function (d) { return d.detail; }));
-
 
 
         /* барчики */
@@ -89,43 +85,41 @@ d3.csv("data/related_prod.csv").then(function(data) {
         bars.exit().remove();
 
 
-
         /* назви */
-        var party_name = barChart.selectAll(".bar-label")
+        var product_name = barChart.selectAll(".bar-label")
             .data(filtered);
 
-        party_name
+        product_name
             .enter()
             .append("text")
             .attr("class", "bar-label")
-            .merge(party_name)
+            .merge(product_name)
             .transition().duration(0)
             .attr("x", function(d) { return  detail_xScale(0); })
             .attr("y", function(d) { return detail_yScale(d.detail)  +  detail_yScale.bandwidth()/3 })
             .attr("fill", svgTextColor)
-            .text(function(d){ return d.detail })
-
-        ;
+            .text(function(d){ return d.detail });
 
 
-        party_name.exit().remove();
+        product_name.exit().remove();
 
 
         /* кількіть депутатів */
-        var dep_number = barChart.selectAll(".label2")
+        var frequency= barChart.selectAll(".label2")
             .data(filtered);
-        dep_number
+
+        frequency
             .enter()
             .append("text")
             .attr("class", "label2")
-            .merge(dep_number)
+            .merge(frequency)
             .transition().duration(0)
             .attr("x", function(d) { return  -40; })
             .attr("y", function(d) { return detail_yScale(d.detail)  +  detail_yScale.bandwidth()/2 })
             .text(function(d){ return d.freq })
             .attr("fill", svgTextColor);
 
-        dep_number.exit().remove();
+        frequency.exit().remove();
     }
 
 
