@@ -13,30 +13,6 @@ d3.csv("data/related_prod.csv").then(function(data) {
     
     var choices = [...new Set(data.map(function(d){ return  d.target }))]
 
-    // var selectChoices = [];
-    //
-    // for(var i in options) {
-    //     selectChoices.push({ value: options[i], label: options[i]})
-    //
-    // }
-    //
-    // console.log(selectChoices);
-    //
-    // // options = options.sort(function(a, b){ return d3.ascending(a,b) });
-    //
-    // var genericExamples = new Choices('#select', {
-    //     searchEnabled: false,
-    //     removeItemButton: true,
-    //     choices: selectChoices
-    // }).setChoices(
-    //     [
-    //         { value: 'віскі', label: 'віскі', selected: true },
-    //     ],
-    //     'value',
-    //     'label',
-    //     false
-    // );
-
     d3.select("#select")
         .selectAll("option")
         .data(choices)
@@ -45,16 +21,9 @@ d3.csv("data/related_prod.csv").then(function(data) {
         .attr("value", function(d){ return d })
         .text(function(d){ return d });
 
-    // d3.select("")
-
     var options = { placeholder: "віскі" };
 
     NiceSelect.bind(document.getElementById("select"), options);
-
-    // $dropdown =  $('select#select').prettyDropdown();
-    // $dropdown.refresh();
-
-
 
     const detail_margin = {top: 40, right: 10, bottom: 30, left: 50};
     const detail_xScale = d3.scaleLinear();
